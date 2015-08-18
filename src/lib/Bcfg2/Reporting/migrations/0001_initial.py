@@ -116,8 +116,6 @@ class Migration(migrations.Migration):
                 ('bad_count', models.IntegerField(default=0)),
                 ('modified_count', models.IntegerField(default=0)),
                 ('extra_count', models.IntegerField(default=0)),
-                ('dry_run', models.BooleanField(default=False)),
-                ('only_important', models.BooleanField(default=False)),
                 ('actions', models.ManyToManyField(to='Reporting.ActionEntry')),
                 ('bundles', models.ManyToManyField(to='Reporting.Bundle')),
                 ('client', models.ForeignKey(related_name='interactions', to='Reporting.Client')),
